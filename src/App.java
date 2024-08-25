@@ -68,12 +68,7 @@ class Cliente {
 
     @Override
     public String toString() {
-        // return "Código: " + codigo + ", Razão Social: " + razaoSocial + ", CNPJ: " +
-        // cnpj +
-        // ", Nome do Comprador: " + nomeComprador + ", Telefone: " + telefone +
-        // ", Email: " + email + ", Dia de Cotação: " + diaCotacao +
-        // ", Forma de Pagamento: " + formaPagamento +
-        // ", Segmento do Estabelecimento: " + segmentoEstabelecimento;
+        
         return codigo
                 + razaoSocial
                 + cnpj
@@ -169,7 +164,6 @@ class GerenciadorClientes {
         System.out.println("\n\n----------------------Resultado da Pesquisa-----------------------\n");
 
         if (clienteBuscado != null) {
-            //System.out.println("Cliente encontrado: " + clienteBuscado);
             gerenciador.exibiCabecalho();
             gerenciador.exibiLinhaClienteFormatada(clienteBuscado);
         } else {
